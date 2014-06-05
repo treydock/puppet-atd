@@ -35,7 +35,7 @@ describe 'atd class:' do
 
   describe file('/etc/at.deny') do
     it { should be_file }
-    it { should be_mode 600 }
+    it { should be_mode 644 }
     it { should be_owned_by 'root' }
     it { should be_grouped_into 'root' }
   end
@@ -53,7 +53,7 @@ describe 'atd class:' do
     describe file('/etc/at.allow') do
       its(:content) { should match /^root$/ }
       it { should be_file }
-      it { should be_mode 600 }
+      it { should be_mode 644 }
       it { should be_owned_by 'root' }
       it { should be_grouped_into 'root' }
     end

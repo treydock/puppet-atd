@@ -51,7 +51,7 @@ describe 'atd' do
       :ensure => 'file',
       :owner  => 'root',
       :group  => 'root',
-      :mode   => '0600',
+      :mode   => '0644',
     })
   end
 
@@ -79,7 +79,7 @@ describe 'atd' do
         :ensure => 'file',
         :owner  => 'root',
         :group  => 'root',
-        :mode   => '0600',
+        :mode   => '0644',
       })
     end
 

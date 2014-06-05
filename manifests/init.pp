@@ -52,7 +52,7 @@ class atd (
       ensure  => 'file',
       owner   => 'root',
       group   => 'root',
-      mode    => '0600',
+      mode    => '0644',
       content => template($at_allow_template),
     }
   }
@@ -61,7 +61,7 @@ class atd (
     ensure  => 'file',
     owner   => 'root',
     group   => 'root',
-    mode    => '0600',
+    mode    => '0644',
     content => template($at_deny_template),
   }
 
